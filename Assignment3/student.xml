@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="student.xsl"?>
+
+<list_student>
+    <student>
+        <name>Nguyen The Anh</name>
+        <age>18</age>
+        <address>Ha Noi</address>
+        <telephone>09898989</telephone>
+    </student>
+    <student>
+        <name>Nguyen The Chi</name>
+        <age>19</age>
+        <address>Ha Noi</address>
+        <telephone>12312312</telephone>
+    </student>
+    <student>
+        <name>Nguyen The Em</name>
+        <age>20</age>
+        <address>Ha Noi</address>
+        <telephone>3432432</telephone>
+    </student>
+    <student>
+        <name>Nguyen The Con</name>
+        <age>21</age>
+        <address>Ha Noi</address>
+        <telephone>43543</telephone>
+    </student>
+</list_student>

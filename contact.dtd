@@ -1,0 +1,15 @@
+<!ELEMENT note (from,to+,cc*,heading?,(body|content)) >
+        <!ELEMENT from (#PCDATA)>
+        <!ELEMENT to (#PCDATA)>
+        <!ELEMENT cc (#PCDATA)>
+        <!ELEMENT heading (#PCDATA)>
+        <!ELEMENT body (header,main,footer)>
+        <!ELEMENT header (#PCDATA)>
+        <!ELEMENT main (#PCDATA)>
+        <!ELEMENT footer (#PCDATA)>
+        <!ELEMENT content (#PCDATA)>
+        <!--Không viết gì là được viết 1 lần-->
+        <!--Sau dấu + là có thể viết nhiều lần nhưng tối thiểu phải có 1 người-->
+        <!--Sau dấu * là có cũng được không có cũng dc và có thể viết nhiều lần-->
+        <!--Sau dấu ? là có cũng được không có cũng dc và chỉ viết 1 lần-->
+        <!--Có dấu (body|content) là chỉ có một trong 2 body hoặc content-->

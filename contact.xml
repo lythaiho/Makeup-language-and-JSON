@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="contact.xsl"?>
+<note xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="contact.xsd">
+    <from>Sender</from>
+    <to>Receiver</to>
+    <cc>Anyone</cc>
+    <cc>Say oh year</cc>
+    <heading>Send an email</heading>
+    <body>
+        <header>1</header>
+        <main>Noi dung email</main>
+        <footer>2009-09-08</footer>
+    </body>
+<!--    <content></content>-->
+</note>

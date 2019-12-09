@@ -1,0 +1,46 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="cart" type="noteType"></xsd:element>
+    <xsd:complexType name="noteType">
+        <xsd:sequence>
+            <xsd:element name="Customer" type="CustomerType"></xsd:element>
+            <xsd:element name="GrandTotal" type="xsd:integer"></xsd:element>
+            <xsd:element name="Date" type="xsd:date"></xsd:element>
+            <xsd:element name="Items" type="ItemsType">
+
+            </xsd:element>
+
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!--    CustomerType Start-->
+    <xsd:complexType name="CustomerType">
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string"></xsd:element>
+            <xsd:element name="address" type="xsd:string"></xsd:element>
+            <xsd:element name="tel" type="xsd:integer"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!--    CustomerType end-->
+
+    <!--    itemsType Start-->
+    <xsd:complexType name="ItemsType">
+        <xsd:sequence>
+            <xsd:element name="Item" minOccurs="1" maxOccurs="unbounded" type="ItemType">
+
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!--    itemsType end-->
+
+    <!--    itemType Start-->
+    <xsd:complexType name="ItemType">
+        <xsd:sequence>
+            <xsd:element name="nameItem" type="xsd:string"></xsd:element>
+            <xsd:element name="priceItem" type="xsd:integer"></xsd:element>
+            <xsd:element name="quantityItem" type="xsd:integer"></xsd:element>
+            <xsd:element name="subTotal" type="xsd:integer"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!--    itemType end-->
+
+</xsd:schema>

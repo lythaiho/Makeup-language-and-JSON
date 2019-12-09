@@ -1,0 +1,25 @@
+{
+  "Customer": {
+    "name": "Duy Code",
+    "address": "Long Bien",
+    "Tel": "0987654321"
+  },
+  "Grand_Total": "5000",
+  "Items": [
+    {
+      "nameItem": "MDF chong am",
+      "price": 250,
+      "quantity": 100
+    },
+    {
+      "nameItem": "Vat Tu Son",
+      "price": 400,
+      "quantity": 521
+    },
+    {
+      "nameItem": "Nhan Cong Sơn",
+      "price": 520,
+      "quantity": 3124
+    }
+  ]
+}

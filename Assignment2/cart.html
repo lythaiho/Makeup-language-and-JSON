@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Get JSON</title>
+</head>
+<body>
+<script type="text/javascript">
+    let xhttp = new XMLHttpRequest();
+    xhttp.open("get","cart.json");
+    xhttp.send();
+    xhttp.onreadystatechange = function () {
+        if(xhttp.readyState ==4){
+            console.log(xhttp.responseText);
+            let data =JSON.parse(xhttp.responseText);
+            console.log(data.Customer.name);
+            console.log(data.Grand_Total);
+            for(let i=0; i<data.Items.length;i++){
+                console.log(data.Items[i]);
+            }
+            data.Items.map(function (value,index) {
+                console.log(value);
+            })
+        }
+    }
+</script>
+
+</body>
+</html>

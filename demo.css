@@ -1,0 +1,12 @@
+from {
+    color: red;
+    font-size: 30px;
+}
+
+to {
+    background-color: green;
+}
+
+body main {
+    font-size: 20px;
+}

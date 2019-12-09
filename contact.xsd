@@ -1,0 +1,20 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="note" type="noteType"></xsd:element>
+    <xsd:complexType name="noteType">
+        <xsd:sequence>
+            <xsd:element name="from" type="xsd:string"></xsd:element>
+            <xsd:element name="to" type="xsd:string" minOccurs="1" maxOccurs="unbounded"></xsd:element>
+            <xsd:element name="cc" type="xsd:string" minOccurs="0" maxOccurs="unbounded"></xsd:element>
+            <xsd:element name="heading" type="xsd:string"></xsd:element>
+            <xsd:element name="body" >
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="header" type="xsd:integer"></xsd:element>
+                        <xsd:element name="main" type="xsd:string"></xsd:element>
+                        <xsd:element name="footer" type="xsd:date"></xsd:element>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

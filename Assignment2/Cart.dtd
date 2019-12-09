@@ -1,0 +1,18 @@
+<!ELEMENT cart (Customer,GrandTotal,Date,Items) >
+        <!ELEMENT Customer (name,address,tel)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT address (#PCDATA)>
+        <!ELEMENT tel (#PCDATA)>
+        <!ELEMENT GrandTotal (#PCDATA)>
+        <!ELEMENT Date (#PCDATA)>
+        <!ELEMENT Items (Item+)>
+        <!ELEMENT Item (nameItem,priceItem,quantityItem,subTotal)>
+        <!ELEMENT nameItem (#PCDATA)>
+        <!ELEMENT priceItem (#PCDATA)>
+        <!ELEMENT quantityItem (#PCDATA)>
+        <!ELEMENT subTotal (#PCDATA)>
+        <!--Không viết gì là được viết 1 lần-->
+        <!--Sau dấu + là có thể viết nhiều lần nhưng tối thiểu phải có 1 người-->
+        <!--Sau dấu * là có cũng được không có cũng dc và có thể viết nhiều lần-->
+        <!--Sau dấu ? là có cũng được không có cũng dc và chỉ viết 1 lần-->
+        <!--Có dấu (body|content) là chỉ có một trong 2 body hoặc content-->
